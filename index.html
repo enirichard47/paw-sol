@@ -596,6 +596,7 @@
             <div class="nav-desktop-links flex gap-10 text-xs font-bold uppercase tracking-widest text-slate-400">
                 <a href="#about" class="hover:text-cyan-400 transition-colors">Mission</a>
                 <a href="#chart" class="hover:text-cyan-400 transition-colors">Mechanism</a>
+                <a href="#tokenomics" class="hover:text-cyan-400 transition-colors">Tokenomics</a>
                 <a href="#roadmap" class="hover:text-cyan-400 transition-colors">Protocol</a>
                 <a href="#community" class="hover:text-cyan-400 transition-colors">Community</a>
             </div>
@@ -618,6 +619,8 @@
             class="text-3xl font-black text-white uppercase tracking-tighter hover:text-cyan-400 transition-colors">Mission</a>
         <a href="#chart"
             class="text-3xl font-black text-white uppercase tracking-tighter hover:text-cyan-400 transition-colors">Mechanism</a>
+        <a href="#tokenomics"
+            class="text-3xl font-black text-white uppercase tracking-tighter hover:text-cyan-400 transition-colors">Tokenomics</a>
         <a href="#roadmap"
             class="text-3xl font-black text-white uppercase tracking-tighter hover:text-cyan-400 transition-colors">Protocol</a>
         <a href="#community"
@@ -750,6 +753,69 @@
             <div class="mt-16 glass-panel p-6 inline-block reveal">
                 <p class="text-xs text-slate-500 font-mono">Proof of all donations will be shared live with the
                     community.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="py-32 lg:py-48 px-6 section-divider relative overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24 reveal">
+                <span class="text-cyan-400 font-bold tracking-[0.5em] text-[10px] uppercase block mb-4">Supply Distribution</span>
+                <h2 class="text-5xl md:text-8xl font-black text-white tracking-tighter uppercase">Tokenomics.</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <div class="relative w-full aspect-square max-w-md mx-auto">
+                        <!-- High-End Donut Chart SVG -->
+                        <svg viewBox="0 0 100 100" class="w-full h-full transform -rotate-90">
+                            <!-- 85% Fair Launch -->
+                            <circle cx="50" cy="50" r="40" fill="transparent" stroke="var(--paw-cyan)" stroke-width="8" stroke-dasharray="213.6 251.2" stroke-linecap="round" class="opacity-80"/>
+                            <!-- 10% Community -->
+                            <circle cx="50" cy="50" r="40" fill="transparent" stroke="var(--paw-purple)" stroke-width="8" stroke-dasharray="25.1 251.2" stroke-dashoffset="-213.6" stroke-linecap="round"/>
+                            <!-- 3% Marketing -->
+                            <circle cx="50" cy="50" r="40" fill="transparent" stroke="#f1f5f9" stroke-width="8" stroke-dasharray="7.5 251.2" stroke-dashoffset="-238.7" stroke-linecap="round"/>
+                            <!-- 2% Dev -->
+                            <circle cx="50" cy="50" r="40" fill="transparent" stroke="#64748b" stroke-width="8" stroke-dasharray="5 251.2" stroke-dashoffset="-246.2" stroke-linecap="round"/>
+                        </svg>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+                            <span class="text-6xl md:text-8xl font-black text-white tracking-tighter">1B</span>
+                            <span class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Total Supply</span>
+                        </div>
+                        <!-- Decorative Glow -->
+                        <div class="absolute inset-0 bg-cyan-500/10 blur-[80px] rounded-full -z-10 animate-pulse"></div>
+                    </div>
+                </div>
+
+                <div class="grid gap-6 reveal">
+                    <div class="glass-panel p-8 border-l-4 border-l-cyan-400 group hover:bg-cyan-400/5 transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-black text-white uppercase italic">Fair Launch</h3>
+                            <span class="text-4xl font-black text-cyan-400">85%</span>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">The majority of the supply is dedicated to the public launch on Pump.fun, ensuring a decentralized and fair beginning for all participants.</p>
+                    </div>
+
+                    <div class="glass-panel p-8 border-l-4 border-l-purple-500 group hover:bg-purple-500/5 transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-black text-white uppercase italic">Community Rewards</h3>
+                            <span class="text-4xl font-black text-purple-500">10%</span>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">Reserved for our community to drive ecosystem growth and support the long-term vision of the Pawsol project.</p>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="glass-panel p-6 border-l-4 border-l-slate-200">
+                            <h3 class="text-lg font-black text-white uppercase italic mb-2">Marketing</h3>
+                            <span class="text-2xl font-black text-slate-200">3%</span>
+                        </div>
+                        <div class="glass-panel p-6 border-l-4 border-l-slate-500">
+                            <h3 class="text-lg font-black text-white uppercase italic mb-2">Dev Wallet</h3>
+                            <span class="text-2xl font-black text-slate-500">2%</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
